@@ -3,7 +3,9 @@ import * as THREE from "three";
 export const blocks = [];
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshStandardMaterial({ color: 0x55aa55 });
+const material = new THREE.MeshLambertMaterial({ color: 0x55aa55 });
+
+
 
 export function generateWorld(scene, x, y, z, single = false) {
   if (single) {
