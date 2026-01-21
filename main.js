@@ -25,7 +25,8 @@ const controls = new PointerLockControls(camera, document.body);
 document.body.addEventListener("click", () => controls.lock());
 scene.add(controls.getObject());
 
-camera.position.set(0, 5, 5);
+controls.getObject().position.set(0, 2, 10);
+
 
 /* World */
 generateWorld(scene);
