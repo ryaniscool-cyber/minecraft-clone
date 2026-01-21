@@ -4,7 +4,8 @@ import { generateWorld, blocks } from "./world.js";
 import { updatePlayer } from "./player.js";
 
 const scene = new THREE.Scene();
-scene.fog = new THREE.Fog(0x87ceeb, 10, 80);
+scene.fog = new THREE.Fog(0x87ceeb, 20, 200);
+
 
 const camera = new THREE.PerspectiveCamera(
   75, window.innerWidth / window.innerHeight, 0.1, 1000
