@@ -21,6 +21,16 @@ const sun = new THREE.DirectionalLight(0xffffff, 0.8);
 sun.position.set(50, 100, 50);
 scene.add(sun);
 
+/* Cube */
+
+const testCube = new THREE.Mesh(
+  new THREE.BoxGeometry(2,2,2),
+  new THREE.MeshBasicMaterial({ color: 0xff0000 })
+);
+testCube.position.set(0,2,0);
+scene.add(testCube);
+
+
 /* Controls */
 const controls = new PointerLockControls(camera, document.body);
 scene.add(controls.getObject());
